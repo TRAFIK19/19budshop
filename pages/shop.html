@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Shop Premium Cannabis | Flower, Pre-Rolls, Edibles & Vapes at 19Bud Shop</title>
+<meta name="description" content="Shop premium cannabis flower, pre-rolls, edibles, vapes, concentrates and CBD at 19Bud Shop in Kampala, Uganda. Curated products with clear pricing and easy ordering." />
+<meta name="keywords" content="buy cannabis flower Uganda, premium pre-rolls Uganda, edibles Kampala, vape shop Uganda, cannabis menu Kampala" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header__inner">
+    <a href="../index.html" class="brand" aria-label="19budshop home">
+      <img src="../images/19budshop logo.png" alt="19budshop logo" class="brand__logo" />
+    </a>
+    <nav class="nav" id="nav">
+      <a href="../index.html" class="nav__link">Home</a>
+      <a href="shop.html" class="nav__link active">Shop</a>
+      <a href="about.html" class="nav__link">About</a>
+    </nav>
+    <div class="header__actions">
+      <a href="shop.html" class="btn btn--small btn--primary">Shop Now</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow">The Collection</span>
+    <h1>Shop the menu.</h1>
+    <p>Every item is tested by an independent lab for potency and contaminants. Prices include tax.</p>
+  </div>
+</section>
+
+<section class="container shop-layout">
+  <aside class="filters">
+    <h4>Category</h4>
+    <div class="filter-group" id="filters"></div>
+  </aside>
+  <div>
+    <div class="shop-toolbar">
+      <span id="result-count">0 products</span>
+      <select id="sort" aria-label="Sort">
+        <option value="featured">Sort: Featured</option>
+        <option value="price-low">Price: Low to High</option>
+        <option value="price-high">Price: High to Low</option>
+        <option value="name">Name: A–Z</option>
+      </select>
+    </div>
+    <div id="shop-grid" class="shop-grid"></div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer__grid">
+    <div>
+      <div class="brand brand--footer">
+        <img src="../images/19budshop logo.png" alt="19budshop logo" class="brand__logo" />
+      </div>
+      <p class="footer__about">A premium cannabis dispensary in Kampala, Uganda.</p>
+    </div>
+    <div><h4>Shop</h4><a href="shop.html">Flower</a><a href="shop.html">Pre-Rolls</a><a href="shop.html">Edibles</a><a href="shop.html">Vapes</a></div>
+    <div><h4>Company</h4><a href="about.html">About</a></div>
+    <div><h4>Contact</h4><p>Kampala<br/>Uganda<br/>Daily · 9am – 10pm</p></div>
+  </div>
+  <div class="footer__bottom container">
+    <span>© <span id="year"></span> 19budshop. All rights reserved.</span>
+    <span>For use only by adults 21 and over. Keep out of reach of children.</span>
+  </div>
+</footer>
+
+<script src="../js/products.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

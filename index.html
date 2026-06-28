@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>19Bud Shop | Premium Cannabis Flower, Pre-Rolls, Edibles & Vapes in Uganda</title>
+<meta name="description" content="Discover premium cannabis flower, pre-rolls, edibles, vapes, concentrates and CBD at 19Bud Shop in Kampala, Uganda. Lab-tested, locally curated, and ready for easy ordering." />
+<meta name="keywords" content="cannabis flower Uganda, premium pre-rolls Kampala, edibles Uganda, vape cartridges Uganda, cannabis shop Kampala" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<!-- Age Gate -->
+<div id="age-gate" class="age-gate" role="dialog" aria-modal="true" aria-labelledby="age-title">
+  <div class="age-gate__box">
+    <div class="age-gate__mark">V</div>
+    <h2 id="age-title">Are you 21 or older?</h2>
+    <p>You must be of legal age to enter 19budshop. By entering this site you confirm you are 21+ and agree to our terms.</p>
+    <div class="age-gate__actions">
+      <button class="btn btn--primary" id="age-yes">Yes, I'm 21+</button>
+      <button class="btn btn--ghost" id="age-no">No, exit</button>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="site-header">
+  <div class="container header__inner">
+    <a href="index.html" class="brand" aria-label="19budshop home">
+      <img src="images/19budshop logo.png" alt="19budshop logo" class="brand__logo" />
+    </a>
+    <nav class="nav" id="nav">
+      <a href="index.html" class="nav__link active">Home</a>
+      <a href="pages/shop.html" class="nav__link">Shop</a>
+      <a href="pages/about.html" class="nav__link">About</a>
+    </nav>
+    <div class="header__actions">
+      <a href="pages/shop.html" class="btn btn--small btn--primary">Shop Now</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero__media" style="background-image:url('images/hero.jpg');"></div>
+  <div class="hero__overlay"></div>
+  <div class="container hero__content">
+    <div class="hero__brand">
+      <div class="hero__brand-stack">
+        <img src="images/19budshop logo.png" alt="19budshop logo" class="hero__logo" />
+        <div class="hero__brand-text">
+          <span class="hero__brand-name">19Bud Shop</span>
+          <span class="hero__year">Est. 2025</span>
+        </div>
+      </div>
+    </div>
+    <p class="hero__sub">A curated collection of small-batch flower, artisan edibles and lab-tested concentrates — sourced from growers we trust.</p>
+    <div class="hero__cta">
+      <a href="pages/shop.html" class="btn btn--primary">Explore the Shop</a>
+      <a href="pages/about.html" class="btn btn--ghost">Our Story</a>
+    </div>
+    <a href="https://wa.me/27750286368?text=Hello%2019Bud%20Shop%2C%20I%20would%20like%20to%20become%20a%20member." class="hero__whatsapp" target="_blank" rel="noopener noreferrer">
+      <img src="images/whatsapp logo.avif" alt="WhatsApp logo" class="hero__whatsapp-icon" />
+      <span>Click here to become a member</span>
+    </a>
+  </div>
+  <div class="hero__marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>Delivering to Kyanja</span><span>·</span><span>Kisasi</span><span>·</span><span>Entebbe</span><span>·</span><span>Jinja</span><span>·</span><span>Kyaliwajala</span><span>·</span><span>Mukono</span><span>·</span>
+      <span>Delivering to Kyanja</span><span>·</span><span>Kisasi</span><span>·</span><span>Entebbe</span><span>·</span><span>Jinja</span><span>·</span><span>Kyaliwajala</span><span>·</span><span>Mukono</span><span>·</span>
+    </div>
+  </div>
+</section>
+
+<!-- Categories -->
+<section class="section">
+  <div class="container">
+    <div class="section__head">
+      <span class="eyebrow">Categories</span>
+      <h2>Shop by intention.</h2>
+      <p class="section__sub">From a quiet evening to a sun-soaked Saturday — find what fits the moment.</p>
+    </div>
+    <div class="cat-grid">
+      <a class="cat-card" href="pages/shop.html#flower"><img src="images/flower.jpg" alt="Flower" loading="lazy"/><div class="cat-card__body"><h3>Flower</h3><span>32 strains</span></div></a>
+      <a class="cat-card" href="pages/shop.html#prerolls"><img src="images/prerolls.jpg" alt="Pre-rolls" loading="lazy"/><div class="cat-card__body"><h3>Pre-Rolls</h3><span>14 blends</span></div></a>
+      <a class="cat-card" href="pages/shop.html#edibles"><img src="images/edibles.jpg" alt="Edibles" loading="lazy"/><div class="cat-card__body"><h3>Edibles</h3><span>21 selections</span></div></a>
+      <a class="cat-card" href="pages/shop.html#vapes"><img src="images/vapes.jpg" alt="Vapes" loading="lazy"/><div class="cat-card__body"><h3>Vapes</h3><span>18 carts</span></div></a>
+      <a class="cat-card" href="pages/shop.html#concentrates"><img src="images/concentrates.jpg" alt="Concentrates" loading="lazy"/><div class="cat-card__body"><h3>Concentrates</h3><span>9 extracts</span></div></a>
+      <a class="cat-card" href="pages/shop.html#cbd"><img src="images/cbd.jpg" alt="CBD & wellness" loading="lazy"/><div class="cat-card__body"><h3>CBD & Wellness</h3><span>12 products</span></div></a>
+    </div>
+  </div>
+</section>
+
+<!-- Featured -->
+<section class="section section--dark">
+  <div class="container">
+    <div class="section__head">
+      <span class="eyebrow">This week's drop</span>
+      <h2>Staff picks.</h2>
+    </div>
+    <div id="featured-grid" class="product-grid"></div>
+    <div class="section__cta"><a href="pages/shop.html" class="btn btn--primary">View all products</a></div>
+  </div>
+</section>
+
+<!-- Reviews -->
+<section class="section">
+  <div class="container">
+    <div class="section__head">
+      <span class="eyebrow">From the community</span>
+      <h2>What people are saying.</h2>
+    </div>
+    <div class="reviews">
+      <figure class="review"><blockquote>"The bud-tenders actually know their stuff. I left with exactly what I needed for sleep — no upsell."</blockquote><figcaption>— Maya R.</figcaption></figure>
+      <figure class="review"><blockquote>"Beautiful shop, easy pickup, and the flower is consistently top-shelf."</blockquote><figcaption>— Andre J.</figcaption></figure>
+      <figure class="review"><blockquote>"Their house pre-rolls are the best deal in the city. I'm a regular now."</blockquote><figcaption>— Priya S.</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- Newsletter -->
+<section class="newsletter">
+  <div class="container newsletter__inner">
+    <div>
+      <span class="eyebrow">Stay in the know</span>
+      <h2>New drops. Members-only deals.</h2>
+    </div>
+    <form id="newsletter-form" class="newsletter__form">
+      <input type="email" required placeholder="your@email.com" aria-label="Email" />
+      <button type="submit" class="btn btn--primary">Subscribe</button>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container footer__grid">
+    <div>
+      <div class="brand brand--footer">
+        <img src="images/19budshop logo.png" alt="19budshop logo" class="brand__logo" />
+      </div>
+      <p class="footer__about">A premium cannabis dispensary in Kampala, Uganda.</p>
+    </div>
+    <div>
+      <h4>Shop</h4>
+      <a href="pages/shop.html">Flower</a><a href="pages/shop.html">Pre-Rolls</a>
+      <a href="pages/shop.html">Edibles</a><a href="pages/shop.html">Vapes</a>
+    </div>
+    <div>
+      <h4>Company</h4>
+      <a href="pages/about.html">About</a>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p>Kampala<br/>Uganda<br/>Daily · 9am – 10pm</p>
+    </div>
+  </div>
+  <div class="footer__bottom container">
+    <span>© <span id="year"></span> 19budshop. All rights reserved.</span>
+    <span>For use only by adults 21 and over. Keep out of reach of children.</span>
+  </div>
+</footer>
+
+<script src="js/products.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
