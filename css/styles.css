@@ -97,6 +97,11 @@ em{font-style:italic;color:var(--orange)}
 .hero__cta{display:flex;gap:14px;flex-wrap:wrap}
 .hero__cta .btn--primary{background:linear-gradient(135deg,var(--orange),#efb267);color:#fff;border-color:transparent}
 .hero__cta .btn--primary:hover{transform:translateY(-2px) scale(1.01)}
+.hero__promo-badge{display:inline-flex;align-items:center;justify-content:center;width:98px;height:98px;border-radius:50%;background:rgba(255,255,255,.96);color:var(--ink);border:2px solid rgba(255,255,255,.9);box-shadow:0 16px 28px rgba(17,31,23,.16);transform:rotate(-10deg);text-align:center;line-height:1;position:relative;overflow:hidden}
+.hero__promo-badge::before{content:"";position:absolute;inset:8px;border:1px solid rgba(27,45,32,.14);border-radius:50%}
+.hero__promo-badge:hover{transform:rotate(-8deg) translateY(-2px);box-shadow:0 18px 30px rgba(17,31,23,.2)}
+.hero__promo-badge span{position:relative;z-index:1;display:block;font-size:.58rem;font-weight:900;letter-spacing:.1em;text-transform:uppercase;max-width:72px}
+.hero__promo-badge span b{display:block;font-size:.7rem;letter-spacing:.08em;margin-bottom:5px;line-height:1;color:var(--green)}
 .hero__whatsapp{display:inline-flex;align-items:center;justify-content:center;gap:10px;margin-top:18px;padding:15px 22px;border-radius:999px;background:#1eb95d;color:#fff;font-weight:700;letter-spacing:.04em;text-transform:uppercase;font-size:.8rem;box-shadow:0 10px 24px rgba(30,185,93,.2);transition:transform .2s ease, box-shadow .2s ease;max-width:100%}
 .hero__whatsapp:hover{transform:translateY(-2px);box-shadow:0 16px 26px rgba(30,185,93,.25)}
 .hero__whatsapp-icon{width:26px;height:26px;display:block;object-fit:contain}
@@ -279,6 +284,7 @@ em{font-style:italic;color:var(--orange)}
   .hero__sub{font-size:1rem}
   .hero__cta{flex-direction:column;align-items:stretch}
   .hero__cta .btn{width:100%}
+  .hero__promo-badge{align-self:center}
   .hero__whatsapp{width:100%}
   .section__head{margin-bottom:42px}
   .shop-toolbar{flex-direction:column;align-items:flex-start;gap:12px}
