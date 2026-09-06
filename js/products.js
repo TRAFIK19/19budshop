@@ -1,12 +1,11 @@
 // Product catalog
 const PRODUCTS = [
-  { id:1, name:"Sunset Sherbet", category:"flower", price:15000, thc:"24% THC · 1g", description:"A creamy, berry-forward hybrid with a smooth finish and relaxing effect.", img:"../images/sunset sherbet.jpeg", badge:"Top Shelf", featured:true },
-  { id:2, name:"Blue Dream", category:"flower", price:15000, thc:"22% THC · 1g", description:"A balanced sativa-dominant strain known for bright flavor and uplifting energy.", img:"../images/blue dream.jpeg" },
-  { id:3, name:"OG Kush", category:"flower", price:15000, thc:"26% THC · 1g", description:"A classic earthy strain with bold flavor and a deeply calming body effect.", img:"../images/og kus.jpeg", badge:"New" },
-  { id:4, name:"Wedding Cake", category:"flower", price:15000, thc:"28% THC · 1g", description:"A rich, sweet strain with a velvety profile and comforting, full-body relaxation.", img:"../images/flower.jpg" },
-  { id:5, name:"Mimosa Haze", category:"flower", price:16000, thc:"23% THC · 1g", description:"A bright citrus strain with uplifting notes and a lively, energetic feel.", img:"../images/mimosa haze.jpeg", badge:"Sativa" },
-  { id:6, name:"Strawberry Gorilla Reserve", category:"flower", price:16500, thc:"24% THC · 1g", description:"A fruity, premium flower with sweet berry notes and a smooth, mellow finish.", img:"../images/strawberry gorilla reserve.jpeg" },
-  { id:7, name:"White Widow Classic", category:"flower", price:15500, thc:"22% THC · 1g", description:"A timeless hybrid celebrated for its balanced high and crisp, woody flavor.", img:"../images/white widow classic.jpeg", badge:"Classic" },
+  { id:1, name:"Sunset Sherbet", category:"flower", price:10000, thc:"24% THC · 1g", description:"A creamy, berry-forward hybrid with a smooth finish and relaxing effect.", img:"../images/sunset sherbet.jpeg", badge:"Top Shelf", featured:true },
+  { id:3, name:"OG Kush", category:"flower", price:10000, thc:"26% THC · 1g", description:"A classic earthy strain with bold flavor and a deeply calming body effect.", img:"../images/og kus.jpeg", badge:"New" },
+  { id:4, name:"Wedding Cake", category:"flower", price:10000, thc:"28% THC · 1g", description:"A rich, sweet strain with a velvety profile and comforting, full-body relaxation.", img:"../images/flower.jpg" },
+  { id:5, name:"Mimosa Haze", category:"flower", price:10000, thc:"23% THC · 1g", description:"A bright citrus strain with uplifting notes and a lively, energetic feel.", img:"../images/mimosa haze.jpeg", badge:"Sativa" },
+  { id:6, name:"Strawberry Gorilla Reserve", category:"flower", price:10000, thc:"24% THC · 1g", description:"A fruity, premium flower with sweet berry notes and a smooth, mellow finish.", img:"../images/strawberry gorilla reserve.jpeg" },
+  { id:7, name:"White Widow Classic", category:"flower", price:10000, thc:"22% THC · 1g", description:"A timeless hybrid celebrated for its balanced high and crisp, woody flavor.", img:"../images/white widow classic.jpeg", badge:"Classic" },
   { id:8, name:"Cali Kush Deluxe", category:"flower", price:30000, thc:"25% THC · 1g", description:"A lush, full-bodied indica with rich flavor and deep nighttime relaxation.", img:"../images/cali kush deluxe.jpeg" },
   { id:9, name:"Sour Diesel Elite", category:"flower", price:16000, thc:"24% THC · 1g", description:"An iconic fuel-forward strain with sharp citrus tones and a strong, invigorating lift.", img:"../images/sour diesel elite.jpeg", badge:"Popular" },
   { id:10, name:"Rainbow Melon Reserve", category:"flower", price:17500, thc:"26% THC · 1g", description:"A sweet, juicy strain with tropical fruit notes and a clean, euphoric effect.", img:"../images/rainbow melon reserve.jpeg" },
