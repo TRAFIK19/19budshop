@@ -83,11 +83,13 @@ const shopGrid = document.getElementById("shop-grid");
 const filterContainer = document.getElementById("filters");
 const sortSelect = document.getElementById("sort");
 const countEl = document.getElementById("result-count");
+const searchInput = document.getElementById("shop-search");
 
 if(shopGrid && typeof PRODUCTS !== "undefined"){
   let activeCat = (location.hash || "#all").replace("#","");
   if(!CATEGORIES.find(c=>c.id===activeCat)) activeCat = "all";
   let activeSort = "featured";
+  let searchTerm = "";
 
   filterContainer.innerHTML = CATEGORIES.map(c=>
     `<button class="filter-btn${c.id===activeCat?" active":""}" data-cat="${c.id}">${c.label}</button>`
@@ -95,6 +97,7 @@ if(shopGrid && typeof PRODUCTS !== "undefined"){
 
   function render(){
     let list = activeCat==="all" ? [...PRODUCTS] : PRODUCTS.filter(p=>p.category===activeCat);
+    list = list.filter(p=>p.name.toLowerCase().includes(searchTerm) || p.description.toLowerCase().includes(searchTerm));
     if(activeSort==="price-low") list.sort((a,b)=>a.price-b.price);
     else if(activeSort==="price-high") list.sort((a,b)=>b.price-a.price);
     else if(activeSort==="name") list.sort((a,b)=>a.name.localeCompare(b.name));
@@ -113,6 +116,9 @@ if(shopGrid && typeof PRODUCTS !== "undefined"){
   });
   if(sortSelect){
     sortSelect.addEventListener("change", e=>{ activeSort = e.target.value; render(); });
+  }
+  if(searchInput){
+    searchInput.addEventListener("input", e=>{ searchTerm = e.target.value.trim().toLowerCase(); render(); });
   }
   render();
 }
