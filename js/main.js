@@ -54,11 +54,11 @@ function checkoutCart(){
 
   const lines = cart.map(item=>`${item.name} — UGX ${item.price.toLocaleString()}`).join("\n");
   const total = cart.reduce((sum, item)=>sum + item.price, 0);
-  const whatsappUrl = `https://wa.me/27750286368?text=${whatsappMessage}`;
+  const whatsappMessage = encodeURIComponent(`Hello 19budshop, I would like to place an order.\n\n${lines}\n\nTotal: UGX ${total.toLocaleString()}\n\nYOUR ORDER is onway`);
+  const whatsappUrl = `https://wa.me/256764356069?text=${whatsappMessage}`;
   window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
 
   const emailBody = encodeURIComponent(`Order Request\n\nCustomer: Website order\nItems:\n${lines}\n\nTotal: UGX ${total.toLocaleString()}\n\nMessage: YOUR ORDER is onway`);
-  const whatsappMessage = encodeURIComponent(`Hello 19budshop, I would like to place an order.\n\n${lines}\n\nTotal: UGX ${total.toLocaleString()}\n\nYOUR ORDER is onway`);
   window.location.href = `mailto:mubajje1000mubajje1000@gmail.com?subject=New%20Order%20from%2019budshop&body=${emailBody}`;
   localStorage.removeItem("19budshop_cart");
   renderCart();

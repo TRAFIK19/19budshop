@@ -31,7 +31,7 @@ const CATEGORIES = [
 ];
 
 function productCard(p){
-  const whatsappUrl = `https://wa.me/27750286368?text=I%20would%20like%20to%20order%20${encodeURIComponent(p.name)}%20-%20UGX%20${p.price.toLocaleString()}`;
+  const whatsappUrl = `https://wa.me/256764356069?text=I%20would%20like%20to%20order%20${encodeURIComponent(p.name)}%20-%20UGX%20${p.price.toLocaleString()}`;
   return `<article class="product" data-id="${p.id}">
     <div class="product__media">
       ${p.badge ? `<span class="product__badge">${p.badge}</span>` : ""}
