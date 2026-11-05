@@ -141,6 +141,16 @@ function bindForm(id, message){
 bindForm("newsletter-form","Thanks! Check your inbox.");
 bindForm("contact-form","Message sent. We'll be in touch.");
 
+const festivalReserveForm = document.getElementById("festival-reserve-form");
+if(festivalReserveForm){
+  festivalReserveForm.addEventListener("submit", e=>{
+    e.preventDefault();
+    const formData = new FormData(festivalReserveForm);
+    const message = `Nyege Nyege reserve request\nName: ${formData.get("name")}\nWhatsApp Number: ${formData.get("whatsapp")}\nExpected Arrival Day: ${formData.get("arrival")}`;
+    window.location.href = `https://wa.me/256764356069?text=${encodeURIComponent(message)}`;
+  });
+}
+
 // Toast
 function showToast(msg){
   let t = document.querySelector(".toast");
